@@ -1,4 +1,5 @@
 
+export const dynamic = 'force-dynamic';
 
 
 // Then, update your app/browse/[id]/page.tsx file:
