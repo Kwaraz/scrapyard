@@ -1,8 +1,5 @@
-
 export const dynamic = 'force-dynamic';
 
-
-// Then, update your app/browse/[id]/page.tsx file:
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { db } from '@/src/db';
@@ -11,13 +8,15 @@ import { eq } from 'drizzle-orm';
 import BuyButton from '@/components/BuyButton';
 
 interface ScamDetailPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export default async function ScamDetailPage({ params }: ScamDetailPageProps) {
-  const id = parseInt(params.id);
+  // Await the params object before using it
+  const resolvedParams = await params;
+  const id = parseInt(resolvedParams.id);
   
   // Handle invalid ID
   if (isNaN(id)) {
