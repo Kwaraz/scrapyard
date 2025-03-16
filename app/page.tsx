@@ -17,7 +17,7 @@ export default function Home() {
       </header>
 
       <main className="flex flex-col gap-[32px] items-center text-center">
-        <h1 className="text-4xl font-bold text-red-500 drop-shadow-md">Welcome to ScamYard!</h1>
+        <h1 className="text-4xl font-bold text-red-500 drop-shadow-md">Welcome to ScamYardos!</h1>
         
         <p className="text-2xl text-red-500 max-w-2xl font-semibold px-4">
           Tired of paying reasonable prices? Wanted to screw yourself over? You've come to the right place!
@@ -26,13 +26,13 @@ export default function Home() {
         <div className="flex gap-6 items-center flex-col sm:flex-row mt-6">
           <a
             className="rounded-full border-2 border-solid border-transparent transition-colors flex items-center justify-center bg-red-500 text-white gap-2 hover:bg-red-600 font-bold text-lg h-12 px-8 w-64 sm:w-auto"
-            href="#"
+            href="/browse"
           >
             Get Scammed Now!
           </a>
           <a
             className="rounded-full border-2 border-solid border-yellow-400 bg-yellow-400 text-black transition-colors flex items-center justify-center hover:bg-yellow-500 font-bold text-lg h-12 px-8 w-64 sm:w-auto"
-            href="#"
+            href="submit-scam"
           >
             Become a Scammer
           </a>
