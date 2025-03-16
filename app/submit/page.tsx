@@ -2,6 +2,7 @@
 
 import { useState, ChangeEvent, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
+import FakeCaptcha from '@/components/FakeCaptcha';
 
 // Define types for form data and response
 type ScamFormData = {
@@ -201,6 +202,7 @@ export default function SubmitScamPage() {
             </div>
           </div>
           
+          <FakeCaptcha/>
           <div className="mt-8 flex justify-end">
             <button 
               type="submit" 

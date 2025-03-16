@@ -5,11 +5,13 @@ import { scamsTable, SelectScam } from '@/src/db/schema';
 export default async function BrowseScamsPage() {
   // Fetch all scams from the database
   const scams = await db.select().from(scamsTable);
+  const randomPrice = (Math.random() * 1.55 + 0.01).toFixed(2);
   
   return (
     <div className="min-h-screen bg-[#2980b9] p-8">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold text-white mb-8 text-center">Browse Scams</h1>
+        <h1 className="text-xl font-bold text-white mb-8 text-center">Notice the low prices? Try clicking on the items!</h1>
         
         {scams.length === 0 ? (
           <div className="bg-white p-8 rounded-lg shadow-md text-center">
@@ -35,7 +37,7 @@ export default async function BrowseScamsPage() {
                   </div>
                   <div className="p-4">
                     <h2 className="text-xl font-bold text-red-500 mb-2">{scam.title}</h2>
-                    <p className="text-gray-700 text-sm">{scam.price}</p>
+                    <p className="text-gray-700 text-sm">${randomPrice}</p>
                   </div>
                 </div>
               </Link>
