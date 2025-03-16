@@ -46,7 +46,7 @@ export default function Home() {
           </a>
         </div>
       </main>
-      <FakeGutPainAd></FakeGutPainAd>
+    
       <footer className="w-full pt-12 pb-4 flex gap-[24px] flex-wrap items-center justify-center text-red-500">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4 font-medium"

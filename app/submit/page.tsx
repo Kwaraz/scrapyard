@@ -3,6 +3,7 @@
 import { useState, ChangeEvent, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import FakeCaptcha from '@/components/FakeCaptcha';
+import Link from 'next/link';
 
 // Define types for form data and response
 type ScamFormData = {
@@ -87,7 +88,7 @@ export default function SubmitScamPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#2980b9] p-8">
+    <div className="min-h-screen bg-black p-8">
       <div className="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
         <h1 className="text-3xl font-bold text-red-500 mb-6">Submit Your Scam</h1>
         
@@ -105,6 +106,7 @@ export default function SubmitScamPage() {
         
         <form onSubmit={handleSubmit} className='text-gray-700'>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Link href='/' className="text-blue-600, underline">go home</Link>
             <div className="md:col-span-2">
               <label className="block text-red-500 font-semibold mb-2" htmlFor="title">
                 Title *

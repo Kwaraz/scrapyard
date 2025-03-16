@@ -21,16 +21,16 @@ export default function FakeNewsPage() {
             Sunday, March 16, 2025 | 1:37 PM EDT
           </div>
         </div>
-        <nav className="flex gap-6 text-sm font-medium overflow-x-auto pb-2">
-          <Link href="#" className="hover:text-red-700">HOME</Link>
-          <Link href="#" className="hover:text-red-700">U.S.</Link>
-          <Link href="#" className="hover:text-red-700">WORLD</Link>
-          <Link href="#" className="hover:text-red-700">POLITICS</Link>
-          <Link href="#" className="text-red-700 font-semibold">SCIENCE</Link>
-          <Link href="#" className="hover:text-red-700">SPACE</Link>
-          <Link href="#" className="hover:text-red-700">TECHNOLOGY</Link>
-          <Link href="#" className="hover:text-red-700">HEALTH</Link>
-          <Link href="#" className="hover:text-red-700">BUSINESS</Link>
+        <nav className="flex gap-6 text-sm text-gray-600 font-medium overflow-x-auto pb-2">
+          <Link href="/" className="hover:text-red-700">HOME</Link>
+          <Link href="/" className="hover:text-red-700">U.S.</Link>
+          <Link href="/" className="hover:text-red-700">WORLD</Link>
+          <Link href="/" className="hover:text-red-700">POLITICS</Link>
+          <Link href="/" className="text-red-700 font-semibold">SCIENCE</Link>
+          <Link href="/" className="hover:text-red-700">SPACE</Link>
+          <Link href="/" className="hover:text-red-700">TECHNOLOGY</Link>
+          <Link href="/" className="hover:text-red-700">HEALTH</Link>
+          <Link href="/" className="hover:text-red-700">BUSINESS</Link>
         </nav>
       </header>
 
@@ -43,7 +43,7 @@ export default function FakeNewsPage() {
       <div className="grid grid-cols-1 md:grid-cols-6 px-4 md:px-8 gap-8 py-6">
         {/* Main Article - 5 columns for full-width feel */}
         <main className="md:col-span-5">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-3 leading-tight">SHOCKING MISHAP: NASA Accidentally Launches Astronaut's Dog to the Moon</h2>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-3 leading-tight text-black">SHOCKING MISHAP: NASA Accidentally Launches Astronaut's Dog to the Moon</h2>
           
           <div className="text-sm text-gray-700 mb-4 flex items-center">
             <span className="font-semibold mr-2">By James Walker, Senior Space Correspondent</span> 
@@ -90,7 +90,7 @@ export default function FakeNewsPage() {
               className="rounded"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-2 text-sm">
-              Bailey, the golden retriever, pictured enjoying his time in his rocket. (Photo: NASA/James Scamerson)
+              Bailey, the golden retriever, pictured enjoying his time in his rocket. (Photo: NASA/ J(AI)mes Scamerson)
             </div>
           </div>
           
